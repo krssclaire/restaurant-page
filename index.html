@@ -4,10 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="content">
         <!-- Temporary structure -->
+
+        <nav>
+            <a href="#home" id="nav-logo" class="logo">Roberto's</a>
+            <img src="imgs/icon-menu.png" alt="Hamburger menu" id="hamburger-menu">
+            <div id="nav-links" class="invisible">
+                <ul>
+                    <li><span class="uppercase">Home</span></li>
+                    <li><span class="uppercase">About us</span></li>
+                    <li><span class="uppercase">Menu</span></li>
+                    <li><span class="uppercase">Contacts</span></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="phone-menu invisible">
+            <div class="back-icon">
+                <div class="x-line"></div>
+                <div class="x-line"></div>
+            </div>
+            <h1 id="phone-nav-logo" class="logo">Roberto's</h1>
+            <ul>
+                <li><span class="uppoercase">Home</span></li>
+                <li><span class="uppoercase">About us</span></li>
+                <li><span class="uppoercase">Menu</span></li>
+                <li><span class="uppoercase">Contacts</span></li>
+            </ul>
+        </div>
+
+        <section id="home">
+            <div class="main-heading">
+                <h1 id="pizzeria">pizzeria</h1>
+                <h1 id="main-logo">Roberto's</h1>
+            </div>
+            <img src="imgs/arrow-down-sign.png" alt="Arrow down" id="arrow">
+        </section>
+
+        <section id="about-us">
+            <h1>Russo Family</h1>
+            <p>
+                Originally tomatoes farmers in the south of Italy, the Russo family
+                opened their first restaurant in their beautiful Campania. <br>
+                Forced by the ‘800s crisis, all the family moved to the US in 1850
+                where they reopened a new restaurant with high quality dishes.
+            </p>
+            <a href="#" class="more">Read more...</a>
+            <img src="imgs/tomatoes.png" alt="Tomatoes">
+            <img src="imgs/mozzarella.png" alt="Mozzarella">
+        </section>
+
+        <section id="menu">
+            <h1>Our menu</h1>
+            <p>
+                The whole family does care about the quality and variety of the 
+                dishes. <br>
+                As a matter of fact, the ingredients are all selected by granpa 
+                Roberto in person. <br>
+                The menu has plenty of options for any flavour.
+            </p>
+            <a href="#" class="more">View menu...</a>
+            <img src="imgs/salame-pizza.png" alt="Salami pizza">
+            <img src="imgs/margherita-pizza.png" alt="Margherita pizza">
+        </section>
+
+        <section class="contacts">
+            <h1 class="uppercase">Contacts</h1>
+            <div class="phone">
+                <p class="contact-title">Phone contact</p>
+                <p class="contact-info">+1 234 567 890</p>
+            </div>
+            <div class="Email">
+                <p class="contact-title">Email</p>
+                <p class="contact-info">pizzeriaroberto's@mail.us</p>
+            </div>
+            <div class="address">
+                <p class="contact-title">Address</p>
+                <p class="contact-info">San Francisco, Beautyland 25</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy2023 - Roberto's</p>
+        </footer>
         
         <!-- Temporary structure -->
     </div>
