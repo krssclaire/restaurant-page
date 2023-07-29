@@ -22,8 +22,10 @@ Live demo: [Home Page]() (Coming soon!)
 ![Bash](https://img.shields.io/badge/Bash-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![VSCode](https://img.shields.io/badge/VSCode-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
+
 ## Features
 
+* Responsive design on all main devices (Phone, Tablet, Desktop)
 
 
 ## What I learned
@@ -31,6 +33,7 @@ Live demo: [Home Page]() (Coming soon!)
 * GitHub Projects for organization purposes
 * Improved Markdown languages
 * 12 columns layout on Figma for a better UI
+* Navigation bar effect on scroll
 
 
 ## Acknowledgments
