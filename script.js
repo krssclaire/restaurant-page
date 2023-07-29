@@ -5,9 +5,9 @@ const phoneMenu = document.querySelector('.phone-menu');
 const phoneMenuLinks = document.querySelectorAll('.phone-links');
 
 window.addEventListener('scroll', changeNavColor);
-
 hamburgerMenu.addEventListener('click', showPhoneMenu);
 xIcon.addEventListener('click', hidePhoneMenu);
+
 phoneMenuLinks.forEach(link => {
     link.addEventListener('click', hidePhoneMenu);
 });

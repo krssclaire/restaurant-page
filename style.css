@@ -5,7 +5,9 @@
     --logo-font: 'Cardo', serif;
     --main-font: 'Inter', sans-serif;
     --bar-color: rgba(0, 0, 0, 0.75);
-    --unit-height: 60px;
+    --phone-unit-height: 60px;
+    --desktop-unit-height: 80px;
+    --side-margin: 13em;
 }
 
 * {
@@ -16,16 +18,28 @@
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    width: 15px;
+    background: rgb(200, 200, 200);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(120, 120, 120); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100); 
 }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+li {
+    list-style-type: none;
 }
 
 .bold {
@@ -54,19 +68,14 @@ body {
     align-items: center;
 }
 
-ul {
+.phone-menu>ul {
     display: flex;
     flex-direction: column;
     gap: 3.5em;
 }
 
-ul>li:hover {
-    cursor: pointer;
-}
-
 .phone-menu>ul>li {
     text-align: center;
-    list-style-type: none;
 }
 
 #x-icon {
@@ -89,7 +98,7 @@ ul>li:hover {
 nav {
     background-color: var(--bar-color);
     color: white;
-    height: var(--unit-height);
+    height: var(--phone-unit-height);
     width: 100vw;
     padding: 0 20px;
     position: fixed;
@@ -112,6 +121,10 @@ nav {
     font-weight: 400;
 }
 
+#nav-links {
+    display: none;
+}
+
 #hamburger-menu {
     height: 1.2em;
 }
@@ -126,6 +139,7 @@ nav {
     color: white;
     width: 100vw;
     height: 90vh;
+    min-height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -158,7 +172,7 @@ nav {
 }
 
 .description {
-    padding: var(--unit-height) calc(var(--unit-height) / 1.5 );
+    padding: var(--phone-unit-height) calc(var(--phone-unit-height) / 1.5 );
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -186,7 +200,7 @@ nav {
 
 img[alt="Tomatoes"] {
     width: 100vw;
-    height: var(--unit-height);
+    height: var(--phone-unit-height);
     object-fit: cover;
 }
 
@@ -202,11 +216,17 @@ img[alt="Mozzarella"], .menu-imgs {
 #contacts {
     color: white;
     width: 100vw;
-    padding: var(--unit-height) calc(var(--unit-height) / 1.5 );
+    padding: var(--phone-unit-height) calc(var(--phone-unit-height) / 1.5 );
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: calc(var(--unit-height) / 1.7);
+    gap: calc(var(--phone-unit-height)/ 1.7);
+}
+
+.contact-type {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--phone-unit-height) / 1.7);
 }
 
 #contacts>h1 {
@@ -229,7 +249,7 @@ img[alt="Mozzarella"], .menu-imgs {
 footer {
     background-color: var(--bar-color);
     color: white;
-    height: var(--unit-height);
+    height: var(--phone-unit-height);
     padding: 0 20px;
     font-family: var(--main-font);
     font-size: 1em;
@@ -238,12 +258,109 @@ footer {
     align-items: center;
 }
 
-#hamburger-menu:hover, #x-icon:hover,
-a:hover, #arrow:hover,
-.contact-info:hover {
-    cursor: pointer;
-}
-
 .invisible {
     display: none;
+}
+
+@media screen and (min-width: 1330px) {
+    nav {
+        height: var(--desktop-unit-height);
+        padding: 0 var(--side-margin);
+    }
+    #nav-logo {
+        font-size: 2.5em;
+    }
+    #hamburger-menu {
+        display: none;
+    }
+    #nav-links {
+        font: 1.25rem var(--main-font);
+        display: block;
+    }
+    #nav-links>ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 2.5em;
+    }
+    #home {
+        background-size: 100%;
+    }
+    #pizzeria {
+        font-size: 3.75em;
+        text-indent: 40px;
+    }
+    #main-logo {
+        font-size: 5em;
+    }
+    #about-us, #menu {
+        padding: var(--desktop-unit-height) var(--side-margin);
+        display: flex;
+        justify-content: space-between;
+    }
+    #about-us {
+        flex-direction: row-reverse;
+    }
+    .description {
+        padding: 0;
+        max-width: 40%;
+        align-items: start;
+    }
+    .description>h1 {
+        font-size: 3.75rem;
+    }
+    .description>p {
+        font-size: 1.5rem;
+    }
+    .description>a {
+        font-size: 1.25rem;
+    }
+    .images {
+        display: flex;
+        gap: 15px;
+    }
+    img[alt="Tomatoes"] {
+        width: initial;
+        height: auto;
+    }
+    img[alt="Mozzarella"] {
+        display: inline;
+    }
+    .menu-imgs {
+        display: block;
+    }
+    .last-section {
+        background-size: 100%;
+    }
+    #contacts {
+        padding: var(--desktop-unit-height) var(--side-margin) calc(var(--desktop-unit-height) + 50px) var(--side-margin);
+    }
+    .contact-type {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #contacts>h1 {
+        font-size: 3.75rem;
+    }
+    .contact-title {
+        font-size: 1.9rem;
+    }
+    .contact-info {
+        font-size: 1.5rem;
+    }
+    .contact {
+        text-align:  left;
+    }
+    footer {
+        height: var(--desktop-unit-height);
+        font-size: 1.25rem;
+    }
+    a:hover:not(#nav-logo) {
+        text-decoration: underline;
+    }
+    #hamburger-menu:hover, #x-icon:hover,
+    a:hover, #arrow:hover,
+    .contact-info:hover {
+        cursor: pointer;
+    }
 }
