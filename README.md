@@ -47,3 +47,4 @@ Live demo: [Home Page]() (Coming soon!)
     * Second pizza in the menu section by [İskender Bilim](https://www.pexels.com/photo/pizza-17648338/s)
     * Pizza in the Contacts section by [Edward Eyer](https://www.pexels.com/photo/person-holding-pepperoni-pizza-on-tray-1049626/)
 * White arrow by [Flaticon](https://www.flaticon.com/free-icons/arrow) - Freepik
+* Web design inspired by [Konstantin Stasenko](https://webflow.com/made-in-webflow/website/roza-cafe)

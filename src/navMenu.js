@@ -1,6 +1,4 @@
-const container = document.querySelector('#content');
-
-const NavBar = (() => {
+export const NavBar = (() => {
     const nav = document.createElement('nav');
     const logoLink = document.createElement('a');
     const hamburgerMenu = document.createElement('img');
@@ -50,36 +48,3 @@ const NavBar = (() => {
         hamburgerMenu
     }
 })();
-
-container.prepend(NavBar.nav);
-
-
-const xIcon = document.querySelector('#x-icon');
-const phoneMenu = document.querySelector('.phone-menu');
-const phoneMenuLinks = document.querySelectorAll('.phone-links');
-
-window.addEventListener('scroll', changeNavColor);
-NavBar.hamburgerMenu.addEventListener('click', showPhoneMenu);
-xIcon.addEventListener('click', hidePhoneMenu);
-
-phoneMenuLinks.forEach(link => {
-    link.addEventListener('click', hidePhoneMenu);
-});
-
-function showPhoneMenu() {
-    phoneMenu.classList.remove('invisible');
-}
-
-function hidePhoneMenu() {
-    phoneMenu.classList.add('invisible');
-}
-
-function changeNavColor() {
-    if (window.scrollY > 730) {
-        NavBar.nav.classList.add('nav-scrolled'); 
-        NavBar.hamburgerMenu.classList.add('hamburger-menu-scrolled');
-    } else if (window.scrollY <= 730) {
-        NavBar.nav.classList.remove('nav-scrolled');
-        NavBar.hamburgerMenu.classList.remove('hamburger-menu-scrolled');
-    }
-}
