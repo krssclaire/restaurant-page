@@ -10,6 +10,7 @@
     --side-margin: 13em;
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -194,10 +195,6 @@ nav {
     font-weight: 800;
 }
 
-.description>a:hover {
-    text-decoration: underline;
-}
-
 img[alt="Tomatoes"] {
     width: 100vw;
     height: var(--phone-unit-height);
@@ -283,6 +280,7 @@ footer {
         gap: 2.5em;
     }
     #home {
+        height: 95vh;
         background-size: 100%;
     }
     #pizzeria {
@@ -355,7 +353,8 @@ footer {
         height: var(--desktop-unit-height);
         font-size: 1.25rem;
     }
-    a:hover:not(#nav-logo) {
+    nav a:hover:not(#nav-logo),
+    .description>a:hover {
         text-decoration: underline;
     }
     #hamburger-menu:hover, #x-icon:hover,
