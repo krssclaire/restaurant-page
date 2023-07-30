@@ -324,7 +324,7 @@ footer {
         display: inline;
     }
     .menu-imgs {
-        display: block;
+        display: flex;
     }
     .last-section {
         background-size: 100%;
