@@ -1,3 +1,5 @@
+import ArrowIcon from './assets/imgs/arrow-down-sign.png';
+
 export const Home = (() => {
     const section = document.createElement('section');
     const hero = document.createElement('div');
@@ -14,7 +16,7 @@ export const Home = (() => {
     logo.setAttribute('id', 'main-logo');
     logo.textContent = 'Roberto\'s';
     arrowLink.setAttribute('href', '#about-us');
-    arrow.setAttribute('src', 'imgs/arrow-down-sign.png');
+    arrow.setAttribute('src', ArrowIcon);
     arrow.setAttribute('alt', 'Arrow down');
     arrow.setAttribute('id', 'arrow');
 

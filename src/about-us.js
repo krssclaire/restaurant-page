@@ -1,3 +1,6 @@
+import TomatoesImg from './assets/imgs/tomatoes.png';
+import MozzarellaImg from './assets/imgs/mozzarella.png';
+
 export const AboutUs = (() => {
     const section = document.createElement('section');
     const div = document.createElement('div');
@@ -17,9 +20,9 @@ export const AboutUs = (() => {
     moreLink.setAttribute('href', '#');
     moreLink.textContent = 'Read more...';
     imgContainer.classList.add('images');
-    firstImg.setAttribute('src', 'imgs/tomatoes.png');
+    firstImg.setAttribute('src', TomatoesImg);
     firstImg.setAttribute('alt', 'Tomatoes');
-    secondImg.setAttribute('src', 'imgs/mozzarella.png');
+    secondImg.setAttribute('src', MozzarellaImg);
     secondImg.setAttribute('alt', 'Mozzarella');
 
     section.append(div, imgContainer);

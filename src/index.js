@@ -5,7 +5,7 @@ import { AboutUs } from './about-us';
 import { Menu } from './menu';
 import { Contacts } from './contacts';
 import { Footer } from './footer';
-
+import './style.css';
 
 const container = document.querySelector('#content');
 const lastSection = document.createElement('div');

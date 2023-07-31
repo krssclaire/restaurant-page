@@ -1,3 +1,6 @@
+import XIcon from './assets/imgs/x.png';
+import MenuIcon from './assets/imgs/icon-menu.png';
+
 export const NavBar = (() => {
     const nav = document.createElement('nav');
     const logoLink = document.createElement('a');
@@ -16,7 +19,7 @@ export const NavBar = (() => {
     logoLink.setAttribute('href', '#home');
     logoLink.setAttribute('id', 'nav-logo');
     logoLink.textContent = 'Roberto\'s';
-    hamburgerMenu.setAttribute('src', 'imgs/icon-menu.png');
+    hamburgerMenu.setAttribute('src', MenuIcon);
     hamburgerMenu.setAttribute('alt', 'Hamburger menu');
     hamburgerMenu.setAttribute('id', 'hamburger-menu');
     navLinks.setAttribute('id', 'nav-links');
@@ -62,7 +65,7 @@ export const PhoneMenu = (() => {
     const contactsLink = document.createElement('a');
 
     mainMenu.classList.add('phone-menu', 'invisible');
-    xIcon.setAttribute('src', 'imgs/x.png')
+    xIcon.setAttribute('src', XIcon)
     xIcon.setAttribute('alt', 'X icon');
     xIcon.setAttribute('id', 'x-icon');
     logo.textContent = 'Roberto\'s';

@@ -1,3 +1,6 @@
+import SalamiImg from './assets/imgs/salame-pizza.png';
+import MargheritaImg from './assets/imgs/margherita-pizza.png';
+
 export const Menu = (() => {
     const section = document.createElement('section');
     const div = document.createElement('div');
@@ -18,9 +21,9 @@ export const Menu = (() => {
     moreLink.setAttribute('href', '#');
     moreLink.textContent = 'View menu...';
     imgContainer.classList.add('images', 'menu-imgs');
-    firstImg.setAttribute('src', 'imgs/salame-pizza.png');
+    firstImg.setAttribute('src', SalamiImg);
     firstImg.setAttribute('alt', 'Salami pizza');
-    secondImg.setAttribute('src', 'imgs/margherita-pizza.png');
+    secondImg.setAttribute('src', MargheritaImg);
     secondImg.setAttribute('alt', 'Margherita pizza');
 
     section.append(div, imgContainer);

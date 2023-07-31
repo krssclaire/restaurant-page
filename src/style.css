@@ -10,7 +10,6 @@
     --side-margin: 13em;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -135,7 +134,7 @@ nav {
 }
 
 #home {
-    background: url(imgs/pizza-bg.png), lightgray 50% / cover no-repeat;
+    background: url(assets/imgs/pizza-bg.png), lightgray 50% / cover no-repeat;
     background-position: center;
     color: white;
     width: 100vw;
@@ -206,7 +205,7 @@ img[alt="Mozzarella"], .menu-imgs {
 }
 
 .last-section {
-    background: url(imgs/pizza-contact.png), lightgray 50% / cover no-repeat;
+    background: url(assets/imgs/pizza-contact.png), lightgray 50% / cover no-repeat;
     background-position: center;
 }
 
