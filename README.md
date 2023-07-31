@@ -1,7 +1,7 @@
 # Pizzeria Roberto's 
 
 Restaurant website of a fictional pizzeria Roberto's <br> 
-Live demo: [Home Page]() (Coming soon!)
+Live demo: [Home Page](https://krssclaire.github.io/restaurant-page/)
 
 
 ## Technologies used
@@ -34,6 +34,8 @@ Live demo: [Home Page]() (Coming soon!)
 * Improved Markdown languages
 * 12 columns layout on Figma for a better UI
 * Navigation bar effect on scroll
+* Webpack use and JS Modules
+* More practice with Module pattern
 
 
 ## Acknowledgments

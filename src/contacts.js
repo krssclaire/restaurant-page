@@ -12,7 +12,7 @@ export const Contacts = (() => {
     const addressTitle = document.createElement('p');
     const addressInfo = document.createElement('p');
 
-    section.setAttribute('is', 'contacts');
+    section.setAttribute('id', 'contacts');
     title.classList.add('uppercase');
     title.textContent = 'Contacts';
     contactsGrp.classList.add('contact-type');
@@ -21,16 +21,18 @@ export const Contacts = (() => {
     phoneTitle.textContent = 'Phone contact';
     phoneInfo.classList.add('contact-info');
     phoneInfo.textContent = '+1 234 567 890';
+    
     emailGrp.classList.add('contact');
     emailTitle.classList.add('contact-title', 'bold');
     emailTitle.textContent = 'Email';
     emailInfo.classList.add('contact-info');
     emailInfo.textContent = 'pizzeriarobertos@mail.us';
+    
     addressGrp.classList.add('contact');
     addressTitle.classList.add('contact-title', 'bold');
     addressTitle.textContent = 'Address';
-    emailInfo.classList.add('contact-info');
-    emailInfo.textContent = 'San Francisco, Beautyland 25';
+    addressInfo.classList.add('contact-info');
+    addressInfo.textContent = 'San Francisco, Beautyland 25';
 
     section.append(title, contactsGrp);
     contactsGrp.append(phoneGrp, emailGrp, addressGrp);

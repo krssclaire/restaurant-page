@@ -1,3 +1,4 @@
+/*
 const container = document.querySelector('#content');
 //const lastSection = document.querySelector('.last-section');
 const lastSection = document.createElement('div');
@@ -266,3 +267,4 @@ PhoneMenu.xIcon.addEventListener('click', hidePhoneMenu);
 phoneMenuLinks.forEach(link => {
     link.addEventListener('click', hidePhoneMenu);
 });
+*/
