@@ -15,8 +15,8 @@ container.append(NavBar.nav, Home.section, AboutUs.section, Menu.section, lastSe
 lastSection.classList.add('last-section');
 lastSection.append(Contacts.section, Footer.footer);
 
-const showPhoneMenu = () => PhoneMenu.mainMenu.classList.remove('invisible');
-const hidePhoneMenu = () => PhoneMenu.mainMenu.classList.add('invisible');
+const showPhoneMenu = () => container.prepend(PhoneMenu.mainMenu);
+const hidePhoneMenu = () => container.removeChild(PhoneMenu.mainMenu);
 const changeNavColor = () => {
     if (window.scrollY > 730) {
         NavBar.nav.classList.add('nav-scrolled'); 

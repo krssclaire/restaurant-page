@@ -64,7 +64,7 @@ export const PhoneMenu = (() => {
     const menuLink = document.createElement('a');
     const contactsLink = document.createElement('a');
 
-    mainMenu.classList.add('phone-menu', 'invisible');
+    mainMenu.classList.add('phone-menu');
     xIcon.setAttribute('src', XIcon)
     xIcon.setAttribute('alt', 'X icon');
     xIcon.setAttribute('id', 'x-icon');

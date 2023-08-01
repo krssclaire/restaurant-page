@@ -23,10 +23,10 @@ If needed, it can be used to analyze the webpage structure.
             <img src="imgs/icon-menu.png" alt="Hamburger menu" id="hamburger-menu">
             <div id="nav-links">
                 <ul>
-                    <li><a href="#home" class="uppercase">Home</a></li>
-                    <li><a href="#about-us" class="uppercase">About us</a></li>
-                    <li><a href="#menu" class="uppercase">Menu</a></li>
-                    <li><a href="#contacts" class="uppercase">Contacts</a></li>
+                    <li><a href="#home" class="uppercase phone-links">Home</a></li>
+                    <li><a href="#about-us" class="uppercase phone-links">About us</a></li>
+                    <li><a href="#menu" class="uppercase phone-links">Menu</a></li>
+                    <li><a href="#contacts" class="uppercase phone-links">Contacts</a></li>
                 </ul>
             </div>
         </nav>
