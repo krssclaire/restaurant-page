@@ -70,16 +70,16 @@ export const PhoneMenu = (() => {
     xIcon.setAttribute('id', 'x-icon');
     logo.textContent = 'Roberto\'s';
     homeLink.setAttribute('href', '#home');
-    homeLink.classList.add('uppercase');
+    homeLink.classList.add('uppercase', 'phone-link');
     homeLink.textContent = 'Home';
     aboutUsLink.setAttribute('href', '#about-us');
-    aboutUsLink.classList.add('uppercase');
+    aboutUsLink.classList.add('uppercase', 'phone-link');
     aboutUsLink.textContent = 'About us';
     menuLink.setAttribute('href', '#menu');
-    menuLink.classList.add('uppercase');
+    menuLink.classList.add('uppercase', 'phone-link');
     menuLink.textContent = 'Menu';
     contactsLink.setAttribute('href', '#contacts');
-    contactsLink.classList.add('uppercase');
+    contactsLink.classList.add('uppercase', 'phone-link');
     contactsLink.textContent = 'Contacts';
 
     mainMenu.append(xIcon, logo, ul);

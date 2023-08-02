@@ -9,7 +9,6 @@ import './style.css';
 
 const container = document.querySelector('#content');
 const lastSection = document.createElement('div');
-const phoneMenuLinks = document.querySelectorAll('.phone-menu li');
 
 container.append(NavBar.nav, Home.section, AboutUs.section, Menu.section, lastSection);
 lastSection.classList.add('last-section');
@@ -25,11 +24,14 @@ const changeNavColor = () => {
         NavBar.nav.classList.remove('nav-scrolled');
         NavBar.hamburgerMenu.classList.remove('hamburger-menu-scrolled');
     }
-}
+};
 
 window.addEventListener('scroll', changeNavColor);
-NavBar.hamburgerMenu.addEventListener('click', showPhoneMenu);
-PhoneMenu.xIcon.addEventListener('click', hidePhoneMenu);
-phoneMenuLinks.forEach(link => {
-    link.addEventListener('click', hidePhoneMenu);
+NavBar.hamburgerMenu.addEventListener('click', () => {
+    showPhoneMenu();
+    const phoneMenuLinks = document.querySelectorAll('.phone-link');
+    phoneMenuLinks.forEach(link => {
+        link.addEventListener('click', hidePhoneMenu); 
+    });
 });
+PhoneMenu.xIcon.addEventListener('click', hidePhoneMenu);

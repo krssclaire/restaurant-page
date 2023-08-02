@@ -356,7 +356,6 @@ footer {
     .description>a:hover {
         text-decoration: underline;
     }
-    #hamburger-menu:hover, #x-icon:hover,
     a:hover, #arrow:hover,
     .contact-info:hover {
         cursor: pointer;
